@@ -1,0 +1,40 @@
+.sidebar {
+  width: 250px; /* Largura fixa da sidebar */
+  background-color: #4b4b4c; /* Cor de fundo mais escura para contraste */
+  color: #ffffff; /* Cor do texto para contraste */
+  height: 100%; /* Garante que a sidebar ocupe toda a altura */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  transition: width 0.3s ease; /* Transição suave ao mudar a largura */
+}
+
+.sidebar h2 {
+  font-size: 24px; /* Tamanho da fonte do título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove marcadores padrão */
+  padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+  margin: 15px 0; /* Espaço entre os itens da lista */
+}
+
+.sidebar ul li:hover {
+  background-color: #495057; /* Cor de fundo ao passar o mouse */
+  border-radius: 5px; /* Arredondar os cantos */
+  cursor: pointer; /* Indica que é clicável */
+  padding: 10px; /* Espaçamento interno ao passar o mouse */
+  transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+.sidebar a {
+  color: #ffffff; /* Cor dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.sidebar a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
