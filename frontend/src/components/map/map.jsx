@@ -5,7 +5,14 @@ const map = () => {
   const position = [-23.55052, -46.633308]; 
 
   return (
-    <MapContainer center={position} zoom={13} style={{ height: '100%', width: '100%' }}>
+    <MapContainer 
+    center={position} 
+    zoom={13} 
+    style={{ height: '100%', width: '100%' }}
+    minZoom={5} 
+    maxZoom={18} 
+    
+    >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

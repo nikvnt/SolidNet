@@ -11,6 +11,19 @@ SCUFFED
    git clone https://github.com/scuffed/scuffed.git
 ````
 
+
+2. Instal as dependencias
+
+```bash
+   cd frontend
+   npm install
+   cd ..
+   cd backend
+   npm install
+````
+
+
+
 ## Configuração do Ambiente
 
 Certifique-se de que você está utilizando as seguintes versões:
