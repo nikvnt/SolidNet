@@ -1,0 +1,28 @@
+.ReactModal__Overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000
+}
+
+.ReactModal__Content {
+    inset: auto !important;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form > button {
+    background-color: #4b4b4c;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+form > button:hover {
+    background-color: white;
+    color: #4b4b4c;
+}
