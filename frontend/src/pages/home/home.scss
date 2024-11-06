@@ -1,0 +1,16 @@
+.home {
+    text-align: center;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    /* background-color: #f8f9fa;  */
+    height: 100%;
+}
+
+.mapcontainer {
+    flex: 1;
+    height: 100%;
+}
