@@ -32,9 +32,10 @@ SCUFFED
 Para configurar variáveis de ambiente, crie um arquivo `.env` na raiz da pasta backend com as seguintes chaves:
 
 ```plaintext
-BACKEND_PORT=your_preferred_local_port_for_backend
-API_KEY=your_api_key_here
-DB_CONNECTION_STRING=your_database_url_here
+SUPABASE_URL=''
+SUPABASE_ANON_KEY=''
+SUPABASE_DB_URL=''
+BACKEND_PREFERRED_PORT=''
 ```
 
 Também crie, logo após, outra `.env` na raiz da pasta frontend com o seguinte conteúdo:
@@ -52,4 +53,33 @@ Por fim, para executar o projeto, é possível rodar ou o front ou o back indepe
 npm start
 
 ````
+
+## Configurando a DB pra testes e desenvolvimento local
+
+Instale o CLI do Supabase com o Homebrew:
+
+```bash
+
+brew install supabase/tap/supabase
+
+```
+
+Em backend/src (necessário ter Docker instalado no ambiente/máquina):
+*Ter a versão mais recente do POSTGRESQL instalada*
+
+```bash
+
+supabase init
+
+sudo service docker start
+
+supabase start
+
+````
+
+E realizar as autenticações e configurações finais necessárias. Certifique-se de ter preenchido o arquivo .env corretamente.
+
+
+
+
 
