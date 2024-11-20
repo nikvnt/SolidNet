@@ -9,7 +9,7 @@ const useAuth = () => {
     const login = async (email, password) => {
         try {
             const port = process.env.REACT_APP_BACKEND_PORT;
-            const response = await fetch(`http://localhost:${port}/api/login`, {
+            const response = await fetch(`${port}/api/login`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),

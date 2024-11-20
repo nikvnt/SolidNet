@@ -34,7 +34,7 @@ function Signup() {
 
         try {
             const port = process.env.REACT_APP_BACKEND_PORT;
-            const result = await submitData(`http://localhost:${port}/api/signup`, userData);
+            const result = await submitData(`${port}/api/signup`, userData);
             console.log('Usuário registrado com sucesso:', result);
             setTimeout(() => {
                 window.location.href = '/login';

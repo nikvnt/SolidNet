@@ -41,7 +41,7 @@ BACKEND_PREFERRED_PORT=''
 Também crie, logo após, outra `.env` na raiz da pasta frontend com o seguinte conteúdo:
 
 ```plaintext
-REACT_APP_BACKEND_PORT=your_preferred_local_port_for_backend
+REACT_APP_BACKEND_PORT=''
 ```
 
 ### Executando o projeto
@@ -77,7 +77,7 @@ supabase start
 
 ````
 
-E realizar as autenticações e configurações finais necessárias. Certifique-se de ter preenchido o arquivo .env corretamente.
+E realizar as autenticações e configurações finais necessárias. Certifique-se de ter preenchido o arquivo .env corretamente. Pra melhor manipulação, é aconselhado ler a documentação do Supabase CLI.
 
 
 
